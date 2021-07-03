@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Nextflow Collector
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="startScan()">
+        <ion-icon slot="icon-only" name="camera"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of barcodeInfoArray">
+      <ion-label text-wrap>
+        <ion-text>
+          <p>{{ item.text }}</p>
+        </ion-text>
+        <p>{{ item.format }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

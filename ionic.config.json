@@ -1,0 +1,8 @@
+{
+  "name": "Barcode_Scanner",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
